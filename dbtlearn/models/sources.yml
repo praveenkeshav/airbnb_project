@@ -17,7 +17,7 @@ sources:
                 - dbt_expectations.expect_column_values_to_match_regex:
                     arguments:
                       # regex matches strings like "$12.34"
-                      regex: '^\$[0-9][0-9\.]+$' 
+                      regex: "^\\\\$[0-9][0-9\\\\.]+$"
 
         - name: hosts
           identifier: raw_hosts

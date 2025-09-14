@@ -2,6 +2,6 @@
     {% set your_name_jinja = "Keshav" %}
     {{ log("Hello " ~ your_name_jinja, info=True) }}
 
-    {{ log("Hello dbt user " ~ var("user_name") ~ "!", info=True) }}
+    {{ log("Hello dbt user " ~ var("user_name", "NO USER NAME IS SET!!") ~ "!", info=True) }}
 
 {% endmacro %}

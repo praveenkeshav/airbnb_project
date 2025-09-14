@@ -1,0 +1,36 @@
+# Python virtualenvs
+.venv*/
+venv/
+.venv/
+ENV/
+env/
+
+# Python bytecode
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# dbt (project-specific)
+dbtlearn/target/
+dbtlearn/dbt_packages/
+dbtlearn/package-lock.yml
+dbtlearn/.dbt/
+dbtlearn/.pytest_cache/
+
+# Dagster
+dbt_dagster_project/tmp*/
+tmp*/
+.dagster_home/
+
+# local venv you created
+.venv311/
+
+# logs / temporary / other
+logs/
+*.log
+tmp*/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
